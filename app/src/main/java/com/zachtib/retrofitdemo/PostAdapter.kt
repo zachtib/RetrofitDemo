@@ -32,7 +32,8 @@ class PostAdapter(private var posts: List<Post> = listOf())
         private val bodyTextView = itemView.bodyTextView
 
         fun bind(post: Post) {
-            TODO("Bind the post to the viewholder")
+            titleTextView.text = post.title
+            bodyTextView.text = post.body
         }
     }
 }
